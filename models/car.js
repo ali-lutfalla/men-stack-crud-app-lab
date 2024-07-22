@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const carSchema = {
     company: String,
-    model: Number,
+    model: String,
     year: Number
 };
 

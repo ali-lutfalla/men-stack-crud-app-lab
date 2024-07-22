@@ -4,5 +4,7 @@ mongoose.connect(process.env.DATABASE_LINK);
 
 const db = mongoose.connection;
 
-db.on(`connected to MongoDB ${mongoose.connection.name}`);
+db.on('connected', () => {
+    console.log(`connected to MongoDB ${mongoose.connection.name}.`);
+});
 

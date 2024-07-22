@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a car</title>
+</head>
+<body>
+    <a href="/cars">back to cars</a>
+    <h1>Create a new Car</h1>
+    <form action="/cars" method="POST">
+        <label for="company">Enter the company name:</label>
+        <input type="text" name="company">
+        <label for="model">Enter the name of the model</label>
+        <input type="text" name="model">
+        <label for="year">year of the model: </label>
+        <input type="number" name="year">
+        <button type="submit">Add car!</button>
+    </form>
+</body>
+</html>

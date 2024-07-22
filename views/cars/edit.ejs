@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= editCar.model %></title>
+</head>
+<body>
+    <h1><%= editCar.model %></h1>
+    <form action="/cars/<%= editCar._id %>?_method=PUT" method="POST">
+        <label for="company">Enter the company name:</label>
+        <input type="text" name="company" value="<%= editCar.company %>">
+        <label for="model">Enter the name of the model</label>
+        <input type="text" name="model" value="<%= editCar.model %>">
+        <label for="year">year of the model: </label>
+        <input type="number" name="year" value="<%= editCar.year %>">
+        <button type="submit">update car!</button>
+    </form>
+</body>
+</html>
